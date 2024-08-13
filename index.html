@@ -92,11 +92,33 @@
                     <img  class="w-[2vw] h-[2vw]" src="https://img.icons8.com/ios-filled/50/ffffff/source-code.png" alt="source-code"/></div>
                      </div>
                 <div id="socialico" class="flex ">
-                    <img src="img/ico/fb.png" class="w-[2.5vw] h-[2.5vw]" alt="">
-                    <img src="img/ico/ig.png" class="w-[2.5vw] h-[2.5vw]" alt="">
-                    <img src="img/ico/wa.png" class="w-[2.5vw] h-[2.5vw]" alt="">
+                    <img src="img/ico/fb.png" loading="lazy" class="w-[2.5vw] h-[2.5vw]" alt="">
+                    <img src="img/ico/ig.png" loading="lazy" class="w-[2.5vw] h-[2.5vw]" alt="">
+                    <img src="img/ico/wa.png" loading="lazy" class="w-[2.5vw] h-[2.5vw]" alt="">
                 </div>
             </div>
         </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+    const lazyImages = document.querySelectorAll('img.lazy');
+
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const image = entry.target;
+                image.src = image.dataset.src;
+                image.classList.remove('lazy');
+                observer.unobserve(image);
+            }
+        });
+    });
+
+    lazyImages.forEach(image => {
+        imageObserver.observe(image);
+    });
+});
+
+        </script>
 </body>
 </html>
