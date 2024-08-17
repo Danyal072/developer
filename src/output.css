@@ -558,24 +558,12 @@ video {
   position: relative;
 }
 
-.left-\[2vw\] {
-  left: 2vw;
-}
-
 .top-4 {
   top: 1rem;
 }
 
 .top-\[-7vw\] {
   top: -7vw;
-}
-
-.top-\[36vw\] {
-  top: 36vw;
-}
-
-.z-50 {
-  z-index: 50;
 }
 
 .my-4 {
@@ -605,10 +593,6 @@ video {
 
 .h-\[20vh\] {
   height: 20vh;
-}
-
-.h-\[20vw\] {
-  height: 20vw;
 }
 
 .h-\[2vw\] {
@@ -984,14 +968,6 @@ video {
 }
 
 @media not all and (min-width: 640px) {
-  .max-sm\:absolute {
-    position: absolute;
-  }
-
-  .max-sm\:relative {
-    position: relative;
-  }
-
   .max-sm\:top-\[0\] {
     top: 0;
   }
@@ -1004,40 +980,20 @@ video {
     display: none;
   }
 
-  .max-sm\:h-\[10vw\] {
-    height: 10vw;
-  }
-
-  .max-sm\:h-\[6vw\] {
-    height: 6vw;
-  }
-
   .max-sm\:h-\[80vw\] {
     height: 80vw;
   }
 
-  .max-sm\:h-\[50vw\] {
-    height: 50vw;
+  .max-sm\:h-\[\] {
+    height: ;
   }
 
-  .max-sm\:w-\[10vw\] {
-    width: 10vw;
+  .max-sm\:h-\[8vw\] {
+    height: 8vw;
   }
 
-  .max-sm\:w-\[32vw\] {
-    width: 32vw;
-  }
-
-  .max-sm\:w-\[40vw\] {
-    width: 40vw;
-  }
-
-  .max-sm\:w-\[6vw\] {
-    width: 6vw;
-  }
-
-  .max-sm\:w-\[90\%\] {
-    width: 90%;
+  .max-sm\:h-\[6vw\] {
+    height: 6vw;
   }
 
   .max-sm\:w-\[95\%\] {
@@ -1052,102 +1008,34 @@ video {
     width: ;
   }
 
-  .max-sm\:w-\[50vw\] {
-    width: 50vw;
+  .max-sm\:w-\[8vw\] {
+    width: 8vw;
   }
 
-  .max-sm\:flex-row {
-    flex-direction: row;
+  .max-sm\:w-\[6\] {
+    width: 6;
+  }
+
+  .max-sm\:w-\[6vw\] {
+    width: 6vw;
   }
 
   .max-sm\:flex-col {
     flex-direction: column;
   }
 
-  .max-sm\:flex-col-reverse {
-    flex-direction: column-reverse;
-  }
-
-  .max-sm\:flex-wrap {
-    flex-wrap: wrap;
-  }
-
-  .max-sm\:justify-center {
-    justify-content: center;
-  }
-
-  .max-sm\:gap-4 {
-    gap: 1rem;
-  }
-
-  .max-sm\:text-\[10vw\] {
-    font-size: 10vw;
-  }
-
-  .max-sm\:text-\[2\.5vw\] {
-    font-size: 2.5vw;
-  }
-
-  .max-sm\:text-\[3vw\] {
-    font-size: 3vw;
-  }
-
-  .max-sm\:text-\[4vw\] {
+  .max-sm\:before\:text-\[4vw\]::before {
+    content: var(--tw-content);
     font-size: 4vw;
   }
 
-  .max-sm\:text-\[5\.5vw\] {
-    font-size: 5.5vw;
-  }
-
-  .max-sm\:text-\[6vw\] {
-    font-size: 6vw;
-  }
-
-  .max-sm\:text-\[8vw\] {
+  .max-sm\:before\:text-\[8vw\]::before {
+    content: var(--tw-content);
     font-size: 8vw;
   }
 
-  .max-sm\:before\:text-\[6vw\]::before {
+  .max-sm\:after\:text-\[8vw\]::after {
     content: var(--tw-content);
-    font-size: 6vw;
-  }
-
-  .max-sm\:after\:text-\[6vw\]::after {
-    content: var(--tw-content);
-    font-size: 6vw;
-  }
-}
-
-@media (max-width: 400px) {
-  .max-\[400px\]\:top-\[37vw\] {
-    top: 37vw;
-  }
-
-  .max-\[400px\]\:py-1 {
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-  }
-
-  .max-\[400px\]\:text-\[3vw\] {
-    font-size: 3vw;
-  }
-}
-
-@media (max-width: 320px) {
-  .max-\[320px\]\:h-\[8vw\] {
-    height: 8vw;
-  }
-
-  .max-\[320px\]\:gap-1 {
-    gap: 0.25rem;
-  }
-
-  .max-\[320px\]\:text-\[4vw\] {
-    font-size: 4vw;
-  }
-
-  .max-\[320px\]\:text-\[5vw\] {
-    font-size: 5vw;
+    font-size: 8vw;
   }
 }
