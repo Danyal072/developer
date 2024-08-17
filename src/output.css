@@ -578,6 +578,11 @@ video {
   z-index: 50;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -879,6 +884,11 @@ video {
   text-transform: capitalize;
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .text-blue-400 {
   --tw-text-opacity: 1;
   color: rgb(96 165 250 / var(--tw-text-opacity));
@@ -994,6 +1004,10 @@ video {
     display: none;
   }
 
+  .max-sm\:h-\[10vw\] {
+    height: 10vw;
+  }
+
   .max-sm\:h-\[6vw\] {
     height: 6vw;
   }
@@ -1002,32 +1016,24 @@ video {
     height: 80vw;
   }
 
-  .max-sm\:h-\[4vw\] {
-    height: 4vw;
+  .max-sm\:h-\[50vw\] {
+    height: 50vw;
   }
 
-  .max-sm\:h-\[5\] {
-    height: 5;
+  .max-sm\:w-\[10vw\] {
+    width: 10vw;
   }
 
-  .max-sm\:h-\[5vw\] {
-    height: 5vw;
-  }
-
-  .max-sm\:h-\[8vw\] {
-    height: 8vw;
-  }
-
-  .max-sm\:h-\[10vw\] {
-    height: 10vw;
-  }
-
-  .max-sm\:w-\[25vw\] {
-    width: 25vw;
+  .max-sm\:w-\[32vw\] {
+    width: 32vw;
   }
 
   .max-sm\:w-\[40vw\] {
     width: 40vw;
+  }
+
+  .max-sm\:w-\[6vw\] {
+    width: 6vw;
   }
 
   .max-sm\:w-\[90\%\] {
@@ -1046,24 +1052,8 @@ video {
     width: ;
   }
 
-  .max-sm\:w-\[4vw\] {
-    width: 4vw;
-  }
-
-  .max-sm\:w-\[5vw\] {
-    width: 5vw;
-  }
-
-  .max-sm\:w-\[8vw\] {
-    width: 8vw;
-  }
-
-  .max-sm\:w-\[10vw\] {
-    width: 10vw;
-  }
-
-  .max-sm\:w-\[6vw\] {
-    width: 6vw;
+  .max-sm\:w-\[50vw\] {
+    width: 50vw;
   }
 
   .max-sm\:flex-row {
@@ -1118,23 +1108,46 @@ video {
     font-size: 8vw;
   }
 
-  .max-sm\:before\:text-\[4vw\]::before {
-    content: var(--tw-content);
-    font-size: 4vw;
-  }
-
   .max-sm\:before\:text-\[6vw\]::before {
     content: var(--tw-content);
     font-size: 6vw;
   }
 
-  .max-sm\:after\:text-\[4vw\]::after {
-    content: var(--tw-content);
-    font-size: 4vw;
-  }
-
   .max-sm\:after\:text-\[6vw\]::after {
     content: var(--tw-content);
     font-size: 6vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .max-\[400px\]\:top-\[37vw\] {
+    top: 37vw;
+  }
+
+  .max-\[400px\]\:py-1 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .max-\[400px\]\:text-\[3vw\] {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 320px) {
+  .max-\[320px\]\:h-\[8vw\] {
+    height: 8vw;
+  }
+
+  .max-\[320px\]\:gap-1 {
+    gap: 0.25rem;
+  }
+
+  .max-\[320px\]\:text-\[4vw\] {
+    font-size: 4vw;
+  }
+
+  .max-\[320px\]\:text-\[5vw\] {
+    font-size: 5vw;
   }
 }

@@ -9,13 +9,189 @@
     z-index: 50;
     background: linear-gradient(110deg, rgb(205, 7, 7) 10px, black);
 }
+#back1{
+    position: relative;
+    height: 23.2vw;
+    width: 30vw;
+    z-index: 50;
+    background: linear-gradient(110deg, rgb(205, 7, 7) 10px, black);
+}
 #back > img{
     rotate: -.5deg;
 }
 @media (max-width: 600px){
     #back{
         height: 80vw;
-        width: 70vw;
+        width: 100vw;
+    }
+    #back1{
+        height: 80vw;
+        width: 100vw;
+    }
+    #firstpage{
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 80vh;
+    }
+    #firstpage > #leftpic{
+        position: relative;
+        top: 1rem;
+    }
+    #firstpage > #intro{
+        width: 100%;
+        height: 100%;
+    }
+    #firstpage > #intro > #content{
+        width: 95%;
+        height: 100%;
+        position: relative;
+        /* top: -2rem; */
+    }
+    #firstpage >  #intro > #content > #hell {
+        font-size: 1rem !important;
+        color: white;
+    }
+    #firstpage > #intro > #content > h1{
+        font-size: 2rem !important; 
+    }
+    #firstpage > #intro > #content > h2{
+        font-size: 1rem !important;
+    }
+    #btncon{
+        width: 8rem;
+    }
+    #secondpage{
+        flex-direction: column;
+        width: 100%;
+        height: 130vh;
+    }
+    #secondpage > #rightcontent{
+        width: 100%;
+        height: 100%;
+    }
+    #secondpage > #rightcontent > #content {
+        width: 100%;
+        height: 50vh;
+    }
+    #rightcontent > #content > p{
+        font-size: .8rem;
+    }
+    #rightcontent > #content > #title-page{
+        font-size: 1rem;
+    }
+    #rightcontent > #content > h1{
+        font-size: 1.6rem;
+    }
+    #skills{
+        width: 100%;
+        height: 20vh;
+        justify-content: center;
+    }
+    #skills > #skillset{
+        justify-content: center;
+        gap: .5rem;
+    }
+    #skills > #skillset > #skill{
+        height: 3vh;
+        font-size: 1rem;
+    }
+    #thirdpage{
+        width: 100%;
+        height: 100vh;
+    }
+    #thirdpage > #title{
+        width: 100%;
+        height: 10vh;
+    }
+    #thirdpage > #title > h3{
+        font-size: 1rem;
+    }
+    #thirdpage > #title > h1{
+        font-size: 1.6rem;
+    }
+    #thirdpage > #things{
+        width: 100%;
+        height: 80vh;
+        justify-content: center;
+        align-items: center;
+    }
+    #things > #box{
+        width: 40%;
+        /* height: 20vh; */
+        gap: 1rem;
+    }
+    #things > #box > #icon > i{
+        font-size: 2rem;
+    }
+    #things > #box > h3{
+        font-size: .8rem;
+    }
+    #things > #box > p{
+        font-size: .6rem;
+    }
+    #last{
+        width: 100%;
+        height: 30vh;
+        flex-direction: column;
+    }
+    #last > #left{
+        width: 100%;
+    }
+    #last > #left > h1{
+        font-size: 1rem;
+    }
+    #last > #left > p{
+        font-size: .8rem;
     }
     
+}
+
+.nav-ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    background-color: orangered;
+    width: 100%;
+    height: 100vh;
+    gap: 3rem;
+    
+}
+.bi-x-lg{
+    animation: open 1s ease;
+}
+.nav-active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0rem;
+    left: 0;
+    background-color: orangered;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    transition: all 1s ease;    
+    animation: motion 1s both;
+}
+
+@keyframes motion {
+    0%{
+        transform: translate(100%, 0);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+    
+}
+
+@keyframes open {
+    0%{
+        opacity: 0.2;
+    }       
+    100%{
+        opacity: 1;
+    }
 }
