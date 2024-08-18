@@ -4,7 +4,7 @@ let cross = document.querySelector('.bi-x-lg');
 let nav = document.querySelector('#nav');
 let ul = document.querySelector('ul');
 
-if(window.innerWidth < 768){
+if(window.innerWidth < 768 || window.screen.width <= 768){
     
     bars.addEventListener('click', function(){
         nav.classList.add('nav-active');
