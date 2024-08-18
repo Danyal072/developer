@@ -9,6 +9,16 @@
     z-index: 50;
     background: linear-gradient(110deg, rgb(205, 7, 7) 10px, black);
 }
+#back1{
+    position: relative;
+    height: 23.2vw;
+    width: 30vw;
+    z-index: 50;
+    background: linear-gradient(110deg, rgb(205, 7, 7) 10px, black);
+}
+#back1 > img{
+    top: -3.4vw;
+}
 #back > img{
     rotate: -.5deg;
 }
